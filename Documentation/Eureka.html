@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8761/ -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="/">--><base href=".">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eureka</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./Eureka_files/wro.css">
+
+  </head>
+
+  <body id="one" data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:8761/"><span></span></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://localhost:8761/">Home</a>
+        </li>
+        <li>
+          <a href="http://localhost:8761/lastn">Last 1000 since startup</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container-fluid xd-container">
+<h1>System Status</h1>
+<div class="row">
+  <div class="col-md-6">
+    <table id="instances" class="table table-condensed table-striped table-hover">
+            <tbody><tr>
+        <td>Environment</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>Data center</td>
+        <td>N/A</td>
+      </tr>
+    </tbody></table>
+  </div>
+  <div class="col-md-6">
+    <table id="instances" class="table table-condensed table-striped table-hover">
+      <tbody><tr>
+        <td>Current time</td>
+        <td>2021-11-02T11:35:51 +0800</td>
+      </tr>
+      <tr>
+        <td>Uptime</td>
+        <td>06:43</td>
+      </tr>
+      <tr>
+        <td>Lease expiration enabled</td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td>Renews threshold</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Renews (last min)</td>
+        <td>12</td>
+      </tr>
+    </tbody></table>
+  </div>
+</div>
+
+
+<h1>DS Replicas</h1>
+<ul class="list-group">
+    <li class="list-group-item"><a href="http://localhost:8761/eureka/">localhost</a></li>
+</ul>
+
+      <h1>Instances currently registered with Eureka</h1>
+      <table id="instances" class="table table-striped table-hover">
+        <thead>
+          <tr><th>Application</th><th>AMIs</th><th>Availability Zones</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+              <tr>
+                <td><b>RECIPEAPIGATEWAY</b></td>
+                <td>
+                    <b>n/a</b> (1)
+                </td>
+                <td>
+                    <b></b> (1)
+                </td>
+                <td>
+                    <b>UP</b> (1) -
+                        <a href="http://192.168.68.117:8765/actuator/info" target="_blank">192.168.68.117:recipeapigateway:8765</a>
+
+                </td>
+              </tr>
+              <tr>
+                <td><b>RECIPESERVER</b></td>
+                <td>
+                    <b>n/a</b> (2)
+                </td>
+                <td>
+                    <b></b> (2)
+                </td>
+                <td>
+                    <b>UP</b> (2) -
+                        <a href="http://192.168.68.117:8901/actuator/info" target="_blank">192.168.68.117:recipeserver:8901</a>
+,
+                        <a href="http://192.168.68.117:8900/actuator/info" target="_blank">192.168.68.117:recipeserver:8900</a>
+
+                </td>
+              </tr>
+
+        </tbody>
+      </table>
+
+      <h1>General Info</h1>
+
+      <table id="generalInfo" class="table table-striped table-hover">
+        <thead>
+          <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>total-avail-memory</td><td>185mb</td>
+            </tr>
+            <tr>
+              <td>num-of-cpus</td><td>4</td>
+            </tr>
+            <tr>
+              <td>current-memory-usage</td><td>42mb (22%)</td>
+            </tr>
+            <tr>
+              <td>server-uptime</td><td>06:43</td>
+            </tr>
+            <tr>
+              <td>registered-replicas</td><td>http://localhost:8761/eureka/</td>
+            </tr>
+            <tr>
+              <td>unavailable-replicas</td><td>http://localhost:8761/eureka/,</td>
+            </tr>
+            <tr>
+              <td>available-replicas</td><td></td>
+            </tr>
+        </tbody>
+      </table>
+
+      <h1>Instance Info</h1>
+
+      <table id="instanceInfo" class="table table-striped table-hover">
+        <thead>
+          <tr><th>Name</th><th>Value</th></tr>
+        </thead><thead>
+        </thead><tbody>
+            <tr>
+              <td>ipAddr</td><td>192.168.68.117</td>
+            </tr>
+            <tr>
+              <td>status</td><td>UP</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="./Eureka_files/wro.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function() {
+         $('table.stripeable tr:odd').addClass('odd');
+         $('table.stripeable tr:even').addClass('even');
+       });
+    </script>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
